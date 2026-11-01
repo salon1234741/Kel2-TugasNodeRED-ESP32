@@ -75,7 +75,7 @@ void onConnectionEstablished() {
 unsigned long lastPublishTime = 0;
 
 void loop() {
-  client.loop();                    // E1: Wi-Fi, MQTT, dan reconnect diurus di sini
+  client.loop();  // E1: Wi-Fi, MQTT, dan reconnect diurus di sini
 
   // E5: setiap 5000 ms (millis, bukan delay):
   if (millis() - lastPublishTime >= 5000) {
